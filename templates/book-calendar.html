@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% block title %}Appointment - FirstChoice{% endblock %}
+
+{% block content %}
+<section class="page-title v3 clearfix parallax parallax5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="{{ url_for('appointment') }}" class="hover-text">APPOINTMENT</a></li>
+                    <li><a href="{{ url_for('appointment') }}" class="hover-text">BOOK APPOINTMENT</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('appointment') }}" class="hover-text">APPOINTMENT</a></h1>
+            </div> <!-- /.page-title-heading -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<article class="content-wrap book-calendar-page">
+    <div class="flat-row bg-f0f0f0">
+        <div class="container">
+            <div class="sub-col clearfix">
+                <div class="one-of-three">
+                    <div class="vehicle-year-wrap">
+                        <div class="flat-title v9">
+                            <h5>VEHICLE YEAR</h5>
+                        </div>
+                        <div class="content">
+                            <div id="slider-range-year"></div>
+                            <input type="text" name="amount" id="amount" readonly/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="one-of-three">
+                    <div class="vehicle-make-wrap">
+                        <div class="flat-title v9">
+                            <h5>VEHICLE MAKE</h5>
+                        </div>
+                        <div class="wrap-input">
+                            <input type="text" name="make" placeholder="Choose">
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="one-of-three">
+                    <div class="vehicle-mileage-wrap pd-left-15">
+                        <div class="flat-title v9">
+                            <h5>VEHICLE MILEAGE</h5>
+                        </div>
+                        <div class="wrap-input">
+                            <input type="text" name="mileage" placeholder="Vehicle mileage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.flat-row -->
+
+    <div class="flat-row">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="70" data-mobile="70" data-smobile="70"></div>
+            <div class="sub-col clearfix">
+                <div class="one-of-two pd-right-15">
+                    <div class="appointment-date-wrap">
+                        <div class="flat-title v9">
+                            <h5>APPOINTMENT DATE</h5>
+                        </div>
+                        <div class="wrap-input">
+                            <input type="text" name="date" placeholder="Tuesday, 10 July 2025">
+                        </div>
+                    </div>
+
+                    <div class="preffered-time-wrap">
+                        <div class="flat-title v9">
+                            <h5>PREFERRED TIME FRAME</h5>
+                        </div>
+                        <div class="wrap-input">
+                            <input type="text" name="time" placeholder="11:00 AM - 12:00 PM">
+                        </div>
+                    </div>
+                </div>
+                <div class="one-of-two pd-left-15">
+                    <div class="preffered-time-wrap">
+                        <div class="flat-title v9">
+                            <h5>SELECT SERVICES NEEDED</h5>
+                        </div>
+                        <div class="wrap-checked-all">
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Air" value="Air-conditioning">
+                                <label for="Air">Air-conditioning</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Wheel" value="Wheel-alignment">
+                                <label for="Wheel">Wheel-alignment</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Oil" value="Oil-lube-filters">
+                                <label for="Oil">Oil-lube-filters</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Heating" value="Heating-cooling">
+                                <label for="Heating">Heating-cooling</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Brake" value="Brake-repair">
+                                <label for="Brake">Brake-repair</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Steering" value="Steering-suspension">
+                                <label for="Steering">Steering-suspension</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Engine" value="Engine-diagnostic">
+                                <label for="Engine">Engine-diagnostic</label>
+                            </div>
+                            <div class="wrap-checked">
+                                <input type="checkbox" name="services" id="Transmission" value="Transmission-repair">
+                                <label for="Transmission">Transmission-repair</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="32" data-mobile="32" data-smobile="32"></div>
+        </div> <!-- /.container -->
+    </div> <!-- /.flat-row -->
+
+    <div class="flat-row">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="34" data-mobile="32" data-smobile="32"></div>
+            <div class="contact-details-wrap flat-border-top">
+                <div class="flat-title v9">
+                    <h5>CONTACT DETAILS</h5>
+                </div>
+                <form action="#" method="post">
+                    <div class="wrap-input-all clearfix">
+                        <div class="wrap-input one-of-two pd-right-10 name">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="wrap-input one-of-two pd-left-10 phone">
+                            <input type="text" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="wrap-input one-of-two pd-right-10 email">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="wrap-input one-of-two pd-left-10 subject">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="wrap-textarea">
+                        <textarea placeholder="Messages" name="message"></textarea>
+                    </div>  
+                    <div class="wrap-btn">
+                        <button type="submit" class="btn-effect btn-submit v2">Submit now</button>
+                    </div> 
+                </form>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="80" data-mobile="80" data-smobile="80"></div>
+        </div> <!-- /.container -->
+    </div> <!-- /.flat-row -->
+
+    <section class="flat-contact v1 clearfix">
+        <div class="container">
+            <div class="wrap-text">
+                <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consultant?</a></h3>
+            </div>
+            <div class="wrap-btn text-right">
+                <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+            </div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-contact -->
+</article> <!-- /.content-wrap -->
+{% endblock %}

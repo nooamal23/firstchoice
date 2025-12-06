@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - FirstChoice{% endblock %}
+
+{% block content %}
+<section class="page-title v3 clearfix parallax parallax5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="#" class="hover-text">PAGES</a></li>
+                    <li><a href="{{ url_for('services') }}" class="hover-text">OUR SERVICES</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('services') }}" class="hover-text">OUR SERVICES</a></h1>
+            </div> <!-- /.page-title-heading -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<article class="content-wrap">
+    <div class="flat-spacer clearfix" data-desktop="99" data-mobile="99" data-smobile="99"></div>
+    <div class="container clearfix">
+        <div class="sidebar-left our-services-page">
+            <div class="widget widget-categories v1">
+                <ul>
+                    <li><a href="{{ url_for('about_company') }}">About Our Company</a></li>
+                    <li><a href="#">Awards & Recognition</a></li>
+                    <li><a href="#">Career Opportunities</a></li>
+                    <li><a href="#">Exclusive Offers</a></li>
+                    <li><a href="#">Maintenance Packages</a></li>
+                </ul>
+            </div> <!-- /.widget-categories -->
+
+            <div class="widget-testimonials flat-border-bottom pd-bottom-30">
+                <div class="flat-carousel-not-numb" data-auto="false" data-column="1" data-column2="1" data-column3="1" data-gap="1" data-dots="false" data-nav="false" data-loop="true">
+                    <div class="flat-testimonials owl-carousel">
+                        <div class="testimonial style1 v2">
+                            <blockquote>
+                                "I have taken several of the family cars here for the past several years and without exception the experiences have been outstanding. I would highly recommend this place to any one who wants great service, honest value, and really great people."
+                            </blockquote>
+                            <div class="customer-info">
+                                <h5 class="name"><a href="#" class="hover-text">JOHN SMITH</a></h5>
+                                <p class="position">Chief Director</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.sidebar-left -->
+
+        <div class="content-page-wrap our-service-page pd-left-60">
+            <div class="flat-spacer clearfix" data-desktop="0" data-mobile="60" data-smobile="60"></div>
+            <div class="flat-imgbox clearfix all-services">
+                <div class="imgbox all-services one-of-two">
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/services/our-services/service-1.png') }}" alt="FirstChoice">
+                    </div>
+                    <div class="imgbox-content">
+                        <h3><a href="#">Tyre and Wheel</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="wrap-btn">
+                            <a href="#" class="flat-button bg-read-more v4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgbox all-services one-of-two">
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/services/our-services/service-2.png') }}" alt="FirstChoice">
+                    </div>
+                    <div class="imgbox-content">
+                        <h3><a href="#">Belt and Hoses</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="wrap-btn">
+                            <a href="#" class="flat-button bg-read-more v4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgbox all-services one-of-two">
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/services/our-services/service-3.png') }}" alt="FirstChoice">
+                    </div>
+                    <div class="imgbox-content">
+                        <h3><a href="#">Break repair</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="wrap-btn">
+                            <a href="#" class="flat-button bg-read-more v4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgbox all-services one-of-two">
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/services/our-services/service-4.png') }}" alt="FirstChoice">
+                    </div>
+                    <div class="imgbox-content">
+                        <h3><a href="#">Lube and Filter</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="wrap-btn">
+                            <a href="#" class="flat-button bg-read-more v4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgbox all-services one-of-two">
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/services/our-services/service-5.png') }}" alt="FirstChoice">
+                    </div>
+                    <div class="imgbox-content">
+                        <h3><a href="#">Free Gas Pump</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="wrap-btn">
+                            <a href="#" class="flat-button bg-read-more v4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imgbox all-services one-of-two">
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/services/our-services/service-6.png') }}" alt="FirstChoice">
+                    </div>
+                    <div class="imgbox-content">
+                        <h3><a href="#">Maintenance Clocks</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="wrap-btn">
+                            <a href="#" class="flat-button bg-read-more v4">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.content-page-wrap -->
+    </div> <!-- /.container -->
+    <div class="flat-spacer clearfix" data-desktop="50" data-mobile="50" data-smobile="50"></div>
+</article> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix">
+    <div class="container">
+        <div class="wrap-text">
+            <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consulant?</a></h3>
+        </div>
+        <div class="wrap-btn text-right">
+            <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}

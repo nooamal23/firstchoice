@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - FirstChoice{% endblock %}
+
+{% block content %}
+<div class="flat-map style3"></div> <!-- /.flat-map -->
+
+<div class="content-wrap contact-v1-page">
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+    <div class="container clearfix">
+        <div class="flat-contact-us contact-v1-page">
+            <div class="flat-title">
+                <h2>CONTACT US</h2>
+            </div>
+            <div class="flat-iconbox style2 v2 clearfix">
+                <div class="iconbox v2 style2">
+                    <div class="iconbox-icon">
+                        <span class="icon_pin_alt"></span>
+                    </div>
+                    <div class="iconbox-content">
+                        <a href="#" class="hover-text"><p>1379 Shoreline Parkway, United States</p></a>
+                    </div>
+                </div> <!-- /.iconbox -->
+                <div class="iconbox v2 style2">
+                    <div class="iconbox-icon">
+                        <span class="icon_mobile"></span>
+                    </div>
+                    <div class="iconbox-content">
+                        <a href="#" class="hover-text"><p>+100 2521-888-39151</p></a>
+                        <a href="#" class="hover-text"><p>+800 718-999-3939</p></a>
+                    </div>
+                </div> <!-- /.iconbox -->
+                <div class="iconbox v2 style2">
+                    <div class="iconbox-icon">
+                        <span class="icon_mail_alt"></span>
+                    </div>
+                    <div class="iconbox-content">
+                        <a href="#" class="hover-text"><p>contact@FirstChoice.com</p></a>
+                        <a href="#" class="hover-text"><p>FirstChoice@gmail.com</p></a>
+                    </div>
+                </div> <!-- /.iconbox -->
+            </div>
+        </div>
+        <div class="flat-form-contact contact-v1-page">
+            <div class="flat-title">
+                <h2>GET IN TOUCH</h2>
+                <p>Get in touch with the professionals at AutoService Group for quality services at competitive prices.</p>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="40" data-mobile="40" data-smobile="40"></div>
+            <form action="{{ url_for('contact') }}" id="contact-form">
+                <div class="wrap-input">
+                    <input type="text" name="name" placeholder="Name" required="">
+                </div>
+                <div class="wrap-input">
+                    <input type="email" name="email" required="" placeholder="Email">
+                </div>
+                <div class="wrap-input">
+                    <input type="text" name="subject" required="" placeholder="Subject">
+                </div>
+                <div class="wrap-textarea">
+                    <textarea name="message" required="" placeholder="Message"></textarea>
+                </div>
+                <div class="wrap-btn">
+                    <button class="btn-effect btn-message" type="submit">Send messages</button>
+                </div>
+            </form>
+        </div>
+    </div> <!-- /.container -->
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+</div> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix">
+    <div class="container">
+        <div class="wrap-text">
+            <h3 class="title"><a href="#">Have you question or need any help for work consultant?</a></h3>
+        </div>
+        <div class="wrap-btn text-right">
+            <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}

@@ -1,0 +1,180 @@
+{% extends "base_loging.html" %}
+
+{% block title %}Register - FirstChoice{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<br></br>
+
+<div class="content-wrap register-page" style="display: flex; justify-content: center; padding-top: 20px;">
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+    <div class="container clearfix" style="text-align: center; max-width: 600px;">
+        <div class="flat-register register-page">
+            <div class="flat-title">
+                <h2>REGISTER</h2>
+                <h4>Create a new FirstChoice account to get started with our services.</h4>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="40" data-mobile="40" data-smobile="40"></div>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}" style="color: red; margin-bottom: 15px;">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form action="{{ url_for('register') }}" id="register-form" method="post" onsubmit="return validateForm(event)">
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="name-wrap">
+                    <input type="text" name="name" placeholder="First Name" class="form-input">
+                    <span id="name-error" class="error-message" style="color: red; font-size: 12px; display: none;">Required*</span>
+                </div>
+
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="name-wrap">
+                    <input type="text" name="name" placeholder="Last Name" class="form-input">
+                    <span id="name-error" class="error-message" style="color: red; font-size: 12px; display: none;">Required*</span>
+                </div>
+
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="name-wrap">
+                    <input type="text" name="name" placeholder="Telephone" class="form-input">
+                    <span id="name-error" class="error-message" style="color: red; font-size: 12px; display: none;">Required*</span>
+                </div>
+
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="name-wrap">
+                    <input type="text" name="name" placeholder="address" class="form-input">
+                    <span id="name-error" class="error-message" style="color: red; font-size: 12px; display: none;">Required*</span>
+                </div>
+
+
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="email-wrap">
+                    <input type="email" name="email" placeholder="Email" class="form-input">
+                    <span id="email-error" class="error-message" style="color: red; font-size: 12px; display: none;">Required*</span>
+                </div>
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="password-wrap">
+                    <input type="password" name="password" id="password" placeholder="Password" class="form-input">
+                    <span id="password-error" class="error-message" style="color: red; font-size: 12px; display: none;">Required*</span>
+                    <i class="fa fa-eye" id="toggle-password" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #666;"></i>
+                </div>
+                <div class="wrap-input" style="margin-bottom: 15px; position: relative;" id="confirm-wrap">
+                    <input type="password" name="confirm_password" id="confirm-password" placeholder="Confirm Password" class="form-input">
+                    <span id="mismatch-error" class="error-message" style="color: red; font-size: 12px; display: none;">Passwords do not match. Please re-enter the same password in both fields*</span>
+                    <i class="fa fa-eye" id="toggle-confirm" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; color: #666;"></i>
+                </div>
+                <div class="wrap-btn" style="margin-bottom: 20px;">
+                    <button class="btn-effect btn-register" type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div> <!-- /.container -->
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+</div> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix" style="background-color: #0078d4; color: white; padding: 10px 0;">
+    <div class="container">
+        <div class="wrap-text" style="text-align: center; padding-top: 20px;">
+            <h3 class="title"><a href="#" style="color: white;">Already have an account? Log in now!</a></h3>
+        </div>
+        <div class="wrap-btn" style="text-align: center; padding-top: 10px;">
+            <a href="{{ url_for('login') }}" class="flat-button btn-login" style="background-color: white; color: #0078d4; padding: 5px 15px;">Login</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+
+<script>
+function validateForm(event) {
+    event.preventDefault();
+    let isValid = true;
+
+    // Get form elements and wrap divs
+    const name = document.querySelector('input[name="name"]');
+    const email = document.querySelector('input[name="email"]');
+    const password = document.querySelector('input[name="password"]');
+    const confirmPassword = document.querySelector('input[name="confirm_password"]');
+    const nameWrap = document.getElementById('name-wrap');
+    const emailWrap = document.getElementById('email-wrap');
+    const passwordWrap = document.getElementById('password-wrap');
+    const confirmWrap = document.getElementById('confirm-wrap');
+
+    // Reset error messages and spacing
+    document.getElementById('name-error').style.display = 'none';
+    document.getElementById('email-error').style.display = 'none';
+    document.getElementById('password-error').style.display = 'none';
+    document.getElementById('mismatch-error').style.display = 'none';
+    nameWrap.style.marginBottom = '15px';
+    emailWrap.style.marginBottom = '15px';
+    passwordWrap.style.marginBottom = '15px';
+    confirmWrap.style.marginBottom = '15px';
+
+    // Check for empty fields and adjust spacing
+    if (!name.value.trim()) {
+        document.getElementById('name-error').style.display = 'block';
+        nameWrap.style.marginBottom = '35px';
+        isValid = false;
+    }
+    if (!email.value.trim()) {
+        document.getElementById('email-error').style.display = 'block';
+        emailWrap.style.marginBottom = '35px';
+        isValid = false;
+    }
+    if (!password.value.trim()) {
+        document.getElementById('password-error').style.display = 'block';
+        passwordWrap.style.marginBottom = '35px';
+        isValid = false;
+    }
+
+    // Password and Confirm Password validation only when at least one is filled
+    if (password.value.trim() !== '' || confirmPassword.value.trim() !== '') {
+        if (!password.value.trim()) {
+            document.getElementById('password-error').style.display = 'block';
+            passwordWrap.style.marginBottom = '35px';
+            isValid = false;
+        } else if (!confirmPassword.value.trim()) {
+            document.getElementById('mismatch-error').style.display = 'block';
+            confirmWrap.style.marginBottom = '35px';
+            isValid = false;
+        } else {
+            // Password complexity check (min 8 chars, at least one letter, one number)
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            if (!passwordRegex.test(password.value)) {
+                document.getElementById('password-error').textContent = 'Minimum 8 characters — must include both letters and numbers*';
+                document.getElementById('password-error').style.display = 'block';
+                passwordWrap.style.marginBottom = '35px';
+                isValid = false;
+            }
+
+            // Check if passwords match
+            if (password.value.trim() !== confirmPassword.value.trim()) {
+                document.getElementById('mismatch-error').style.display = 'block';
+                confirmWrap.style.marginBottom = '35px';
+                isValid = false;
+            } else {
+                document.getElementById('mismatch-error').style.display = 'none';
+            }
+        }
+    }
+
+    if (isValid) {
+        document.getElementById('register-form').submit();
+    }
+
+    return isValid;
+}
+
+// Password visibility toggle
+document.getElementById('toggle-password').addEventListener('click', function () {
+    const password = document.getElementById('password');
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
+
+document.getElementById('toggle-confirm').addEventListener('click', function () {
+    const confirmPassword = document.getElementById('confirm-password');
+    const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmPassword.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
+</script>
+
+<style>
+
+</style>
+{% endblock %}

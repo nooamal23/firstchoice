@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>{% block title %}FirstChoice - Car Repair, Auto Car Services{% endblock %}</title>
+
+    <meta name="author" content="themsflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/colors/color1.css') }}" id="colors">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet/responsive.css') }}">
+</head>
+<body class="woocommerce-page">
+    <div class="preloader">
+        <div class="load">
+            <div class="gear one">
+                <svg id="blue" viewbox="0 0 100 100" fill="#fc1452">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg>
+            </div>
+            <div class="gear two">
+                <svg id="pink" viewbox="0 0 100 100" fill="#137bc0">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg>
+            </div>
+            <div class="gear three">
+                <svg id="yellow" viewbox="0 0 100 100" fill="#e8b006">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg>
+            </div>
+            <div class="lil-circle"></div>
+            <svg class="blur-circle">
+                <filter id="blur">
+                    <fegaussianblur in="SourceGraphic" stddeviation="13"></fegaussianblur>
+                </filter>
+                <circle cx="70" cy="70" r="66" fill="transparent" stroke="white" stroke-width="40" filter="url(#blur)"></circle>
+            </svg>
+        </div>
+    </div> <!-- /.preloader -->
+
+    <div class="top style3 clearfix">
+        <div class="container">
+            <div class="flat-title-page">
+                <p>Welcome to first choice services</p>
+            </div> <!-- /.flat-title-page -->
+
+            <div id="logo" class="text-center">
+                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="FirstChoice" width="188" height="75" data-retina="{{ url_for('static', filename='images/logo-2x.png') }}" data-width="188" data-height="75"></a>
+            </div> <!-- /#logo -->
+
+            <div class="flat-menu-extra">
+                <ul>
+                    <li class="cart nav-top-cart-wrapper">
+                        <a href="#"><span class="text">My cart is (0)</span></a> <span class="total-product">3</span>
+                        <div class="nav-shop-cart">
+                            <div class="widget_shopping_cart_content">
+                                <div class="woocommerce-min-cart-wrap">
+                                    <ul class="woocommerce-mini-cart cart_list product_list_widget">
+                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                            <a href="#" class="remove"><span class="fa fa-close"></span></a>
+                                            <a href="#">
+                                                <img width="150" height="150" src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-1.png') }}" alt="Image">Advance Blue Oil Cans
+                                            </a>
+                                            <span class="quantity">1 × <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>65</span></span>
+                                        </li>
+                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                            <a href="#" class="remove"><span class="fa fa-close"></span></a>
+                                            <a href="#">
+                                                <img width="150" height="150" src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-2.png') }}" alt="Image">Simple Blue Oil Cans
+                                            </a>
+                                            <span class="quantity">1 × <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>35</span></span>
+                                        </li>
+                                        <li class="woocommerce-mini-cart-item mini_cart_item">
+                                            <a href="#" class="remove"><span class="fa fa-close"></span></a>
+                                            <a href="#">
+                                                <img width="150" height="150" src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-3.png') }}" alt="Image">Premium Blue Oil Cans
+                                            </a>
+                                            <span class="quantity">1 × <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>45</span></span>
+                                        </li>
+                                    </ul>
+                                    <p class="woocommerce-mini-cart__total total"><strong>Subtotal:</strong> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>145</span></p>
+                                    <p class="woocommerce-mini-cart__buttons buttons"><a href="#" class="button wc-forward">View cart</a><a href="#" class="button checkout wc-forward">Checkout</a></p>
+                                </div><!-- /.widget_shopping_cart_content -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- /.container -->
+    </div> <!-- /.top -->
+
+    <header id="header" class="header-v4">
+        <div class="overlay"></div>
+        <div class="container clearfix">
+            <div class="mobile-button v2">
+                <span></span>
+            </div>
+            <div class="nav-wrap text-center">
+                <nav id="mainnav" class="mainnav header-v4">
+                    <ul class="menu">
+                        <li class="{% if request.endpoint == 'index' %}active{% endif %}">
+                            <a href="{{ url_for('index') }}">Home</a>
+                        </li>
+                        <li class="{% if request.endpoint == 'services' %}active{% endif %}">
+                            <a href="{{ url_for('services') }}">Services</a>
+                        </li>
+                        <li
+                            class="item-has-child {% if request.endpoint in ['about_company', 'company_history'] %}active{% endif %}">
+                            <a href="#">Company</a>
+                            <ul class="submenu">
+                                <li class="{% if request.endpoint == 'about_company' %}active{% endif %}">
+                                    <a href="{{ url_for('about_company') }}">About Company</a>
+                                </li>
+                                <li class="{% if request.endpoint == 'company_history' %}active{% endif %}">
+                                    <a href="{{ url_for('company_history') }}">Company History</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="{% if request.endpoint == 'project' %}active{% endif %}">
+                            <a href="{{ url_for('project') }}">Project</a>
+                        </li>
+                        <li class="{% if request.endpoint == 'shop' %}active{% endif %}">
+                            <a href="{{ url_for('shop') }}">Shop</a>
+                        </li>
+                        <li
+                            class="{% if request.endpoint in ['contact', 'appointment', 'gallery', 'team', 'blog', 'faqs'] %}active{% endif %}">
+                            <a href="#">More</a>
+                            <ul class="submenu">
+                                <li class="{% if request.endpoint == 'contact' %}active{% endif %}">
+                                    <a href="{{ url_for('contact') }}">Contact</a>
+                                </li>
+                                <li class="{% if request.endpoint == 'appointment' %}active{% endif %}">
+                                    <a href="{{ url_for('appointment') }}">Appointment</a>
+                                    <!-- class="flat-button bg-appointment"-->
+                                </li>
+                                <li class="{% if request.endpoint == 'gallery' %}active{% endif %}">
+                                    <a href="{{ url_for('gallery') }}">Gallery</a>
+                                </li>
+                                <li class="{% if request.endpoint == 'team' %}active{% endif %}">
+                                    <a href="{{ url_for('team') }}">Our Team</a>
+                                </li>
+                                <li class="{% if request.endpoint == 'blog' %}active{% endif %}">
+                                    <a href="{{ url_for('blog') }}">Blog</a>
+                                </li>
+                                <li class="{% if request.endpoint == 'faqs' %}active{% endif %}">
+                                    <a href="{{ url_for('faqs') }}">FAQs</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-signin">
+                            <a href="{{ url_for('login') }}">Sign In</a>
+                        </li>
+                        <!-- <li class="{% if request.endpoint == 'register' %}active{% endif %}">
+            <a href="{{ url_for('register') }}">Sign Up</a>
+        </li> -->
+                    </ul>
+                </nav><!-- /.mainnav -->
+            </div>
+
+        </div> <!-- /.container -->
+    </header> <!-- /#header -->
+
+    {% block content %}
+    {% endblock %}
+
+    <footer id="footer" class="style1">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="82" data-mobile="60" data-smobile="60"></div>
+            <div id="logo-ft" class="text-center">
+                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo-ft-2.png') }}" alt="FirstChoice" width="200" height="79" data-retina="{{ url_for('static', filename='images/logo-ft-2-2x.png') }}" data-width="200" data-height="79"></a>
+            </div> <!-- #logo-ft -->
+            <div class="flat-spacer clearfix" data-desktop="50" data-mobile="50" data-smobile="50"></div>
+            <div class="flat-socails text-center v3">
+                <ul class="clearfix">
+                    <li><a href="#"><span class="social_facebook"></span></a></li>
+                    <li><a href="#"><span class="social_twitter"></span></a></li>
+                    <li><a href="#"><span class="social_pinterest"></span></a></li>
+                    <li><a href="#"><span class="social_googleplus"></span></a></li>
+                    <li><a href="#"><span class="fa fa-youtube"></span></a></li>
+                </ul>
+            </div> <!-- /.flat-socails -->
+            <div class="flat-spacer clearfix" data-desktop="74" data-mobile="74" data-smobile="74"></div>
+            <div class="flat-copy-right text-center">
+                <p>Design by @themesflat</p>
+            </div> <!-- /.flat-copy-right -->
+            <div class="flat-spacer clearfix" data-desktop="85" data-mobile="60" data-smobile="60"></div>
+        </div> <!-- /.container -->
+    </footer> <!-- /#footer -->
+
+    <span class="gotop">
+        <img src="{{ url_for('static', filename='images/goto-automov.png') }}" alt="FirstChoice">
+    </span> <!-- /.gotop -->
+
+    <!-- Javascript -->
+    <script src="{{ url_for('static', filename='javascript/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/jquery-ui.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/equalize.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/jquery.cookie.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/parallax.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/main.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='javascript/jquery-fancybox.js') }}"></script>
+
+</body>
+</html>
+

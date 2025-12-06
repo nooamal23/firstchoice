@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}FirstChoice - Our Gallery{% endblock %}
+
+{% block content %}
+<section class="page-title v3 clearfix parallax parallax5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="#" class="hover-text">PAGES</a></li>
+                    <li><a href="{{ url_for('gallery') }}" class="hover-text">OUR GALLERY</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('gallery') }}" class="hover-text">OUR GALLERY</a></h1>
+            </div> <!-- /.page-title-heading -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<div class="content-wrap our-gallery-page bg-f6f6f6">
+    <div class="container">
+        <div class="flat-spacer clearfix" data-desktop="80" data-mobile="60" data-smobile="60"></div>
+        <ul class="flat-filter style2 text-center clearfix">
+            <li class="active"><a href="#" data-filter="*">SHOW ALL</a></li>
+            <li><a href="#" data-filter=".Engine">ENGINE REPAIR</a></li>
+            <li><a href="#" data-filter=".Mufflers">MUFFLERS</a></li>
+            <li><a href="#" data-filter=".Oil">OIL CHANGES</a></li>
+        </ul>
+        <div class="flat-spacer clearfix" data-desktop="70" data-mobile="30" data-smobile="30"></div>
+        <div class="flat-imgbox isotope-project style4">
+            <div class="grid-sizer"></div>
+
+            <div class="imgbox style4 Mechanic Oil v1 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/home2/our-gallary-1.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect">Checking car engine</a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Oil imgbox-masonry Engine Mufflers v2">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/home2/our-gallary-2.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Mechanic Oil v2 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/home2/our-gallary-3.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Engine Mufflers v2 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/home2/our-gallary-4.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Mechanic v2 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/home2/our-gallary-5.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Oil imgbox-masonry Engine Mufflers v2">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/gallery/our-gallery/gallery-6.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Mechanic Oil v2 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/gallery/our-gallery/gallery-7.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Mechanic Oil v1 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/gallery/our-gallery/gallery-10.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect">Checking car engine</a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Engine Mufflers v2 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/gallery/our-gallery/gallery-8.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+
+            <div class="imgbox style4 Mechanic v2 imgbox-masonry">
+                <div class="imgbox-img">
+                    <img src="{{ url_for('static', filename='images/gallery/our-gallery/gallery-9.png') }}" alt="FirstChoice">
+                    <div class="overlay"></div>
+                </div>
+                <div class="imgbox-content">
+                    <a href="#" class="btn-defect"><span class="arrow_right"></span></a>
+                </div>
+            </div> <!-- /.imgbox -->
+        </div> <!-- /.flat-imgbox -->
+        <div class="flat-paginations v4">
+            <ul class="paginations clearfix">
+                <li><a href="#" class="btn-defect">1</a></li>
+                <li class="active"><a href="#" class="btn-defect">2</a></li>
+                <li><a href="#" class="btn-defect">3</a></li>
+            </ul> <!-- /.paginations -->
+        </div>
+        <div class="flat-spacer clearfix" data-desktop="75" data-mobile="60" data-smobile="60"></div>
+    </div>
+</div> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix">
+    <div class="container">
+        <div class="wrap-text">
+            <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consultant?</a></h3>
+        </div>
+        <div class="wrap-btn text-right">
+            <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}

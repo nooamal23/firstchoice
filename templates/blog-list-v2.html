@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block title %}FirstChoice - Blog Listing{% endblock %}
+
+{% block content %}
+<section class="page-title v1 clearfix parallax parallax7">
+    <div class="flat-spacer clearfix" data-desktop="70" data-mobile="60" data-smobile="60"></div>
+    <div class="overlay"></div>
+    <div class="container clearfix">
+        <div class="wrap-page-title">
+            <div class="page-title-heading v1">
+                <h1><a href="{{ url_for('blog') }}" class="hover-text">BLOG LISTING</a></h1>
+            </div> <!-- /.page-title-heading -->
+            <div class="breakcrums text-right v1">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="{{ url_for('blog') }}" class="hover-text">BLOG</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+    <div class="flat-spacer clearfix" data-desktop="70" data-mobile="60" data-smobile="60"></div>
+</section> <!-- /.page-title -->
+
+<section class="content-wrap">
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+    <div class="main-blog-list v2">
+        <div class="container">
+            <div class="wrap-blog-list">
+                <div class="flat-post clearfix">
+                    <div class="post one-of-one blog-list-v2">
+                        <div class="border-post clearfix fix-float-box">
+                            <div class="container-post-img">
+                                <div class="post-img">
+                                    <div class="overlay">
+                                        <a href="{{ url_for('blog') }}"><span class="arrow_right hover-text"></span></a>
+                                    </div>
+                                    <img src="{{ url_for('static', filename='images/blog/blog-list-v2/post-1.png') }}" alt="FirstChoice">
+                                </div> <!-- /.post-img -->
+                            </div> <!-- /.container-post-img -->
+                            <div class="post-content">
+                                <h3><a href="{{ url_for('blog') }}">Useful tips for your Car</a></h3>
+                                <div class="meta">
+                                    <ul>
+                                        <li class="user"><a href="#" class="hover-text">Admin</a></li>
+                                        <li class="comment"><a href="#" class="hover-text">25 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                <div class="wrap-btn">
+                                    <a href="{{ url_for('blog') }}" class="flat-button btn-read-more bg-read-more">READ MORE</a>
+                                </div>
+                            </div> <!-- /.post-content -->
+                        </div> <!-- /.border-post -->
+                    </div> <!-- /.post -->
+                    <div class="post one-of-one blog-list-v2">
+                        <div class="border-post clearfix fix-float-box">
+                            <div class="container-post-img">
+                                <div class="post-img">
+                                    <div class="overlay">
+                                        <a href="{{ url_for('blog') }}"><span class="arrow_right hover-text"></span></a>
+                                    </div>
+                                    <img src="{{ url_for('static', filename='images/blog/blog-list-v2/post-2.png') }}" alt="FirstChoice">
+                                </div> <!-- /.post-img -->
+                            </div> <!-- /.container-post-img -->
+                            <div class="post-content">
+                                <h3><a href="{{ url_for('blog') }}">We have Moved to our new Garage</a></h3>
+                                <div class="meta">
+                                    <ul>
+                                        <li class="user"><a href="#" class="hover-text">Admin</a></li>
+                                        <li class="comment"><a href="#" class="hover-text">25 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                <div class="wrap-btn">
+                                    <a href="{{ url_for('blog') }}" class="flat-button btn-read-more bg-read-more">READ MORE</a>
+                                </div>
+                            </div> <!-- /.post-content -->
+                        </div> <!-- /.border-post -->
+                    </div> <!-- /.post -->
+                    <div class="post one-of-one blog-list-v2">
+                        <div class="border-post clearfix fix-float-box">
+                            <div class="container-post-img">
+                                <div class="post-img">
+                                    <div class="overlay">
+                                        <a href="{{ url_for('blog') }}"><span class="arrow_right hover-text"></span></a>
+                                    </div>
+                                    <img src="{{ url_for('static', filename='images/blog/blog-list-v2/post-3.png') }}" alt="FirstChoice">
+                                </div> <!-- /.post-img -->
+                            </div> <!-- /.container-post-img -->
+                            <div class="post-content">
+                                <h3><a href="{{ url_for('blog') }}">Useful tips for your Car</a></h3>
+                                <div class="meta">
+                                    <ul>
+                                        <li class="user"><a href="#" class="hover-text">Admin</a></li>
+                                        <li class="comment"><a href="#" class="hover-text">25 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                <div class="wrap-btn">
+                                    <a href="{{ url_for('blog') }}" class="flat-button btn-read-more bg-read-more">READ MORE</a>
+                                </div>
+                            </div> <!-- /.post-content -->
+                        </div> <!-- /.border-post -->
+                    </div> <!-- /.post -->
+                    <div class="post one-of-one blog-list-v2">
+                        <div class="border-post clearfix fix-float-box">
+                            <div class="container-post-img">
+                                <div class="post-img">
+                                    <div class="overlay">
+                                        <a href="{{ url_for('blog') }}"><span class="arrow_right hover-text"></span></a>
+                                    </div>
+                                    <img src="{{ url_for('static', filename='images/blog/blog-list-v2/post-4.png') }}" alt="FirstChoice">
+                                </div> <!-- /.post-img -->
+                            </div> <!-- /.container-post-img -->
+                            <div class="post-content">
+                                <h3><a href="{{ url_for('blog') }}">We have Moved to our new Garage</a></h3>
+                                <div class="meta">
+                                    <ul>
+                                        <li class="user"><a href="#" class="hover-text">Admin</a></li>
+                                        <li class="comment"><a href="#" class="hover-text">25 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                <div class="wrap-btn">
+                                    <a href="{{ url_for('blog') }}" class="flat-button btn-read-more bg-read-more">READ MORE</a>
+                                </div>
+                            </div> <!-- /.post-content -->
+                        </div> <!-- /.border-post -->
+                    </div> <!-- /.post -->
+                    <div class="post one-of-one blog-list-v2">
+                        <div class="border-post clearfix fix-float-box">
+                            <div class="container-post-img">
+                                <div class="post-img">
+                                    <div class="overlay">
+                                        <a href="{{ url_for('blog') }}"><span class="arrow_right hover-text"></span></a>
+                                    </div>
+                                    <img src="{{ url_for('static', filename='images/blog/blog-list-v2/post-5.png') }}" alt="FirstChoice">
+                                </div> <!-- /.post-img -->
+                            </div> <!-- /.container-post-img -->
+                            <div class="post-content">
+                                <h3><a href="{{ url_for('blog') }}">We have Moved to our new Garage</a></h3>
+                                <div class="meta">
+                                    <ul>
+                                        <li class="user"><a href="#" class="hover-text">Admin</a></li>
+                                        <li class="comment"><a href="#" class="hover-text">25 Comments</a></li>
+                                    </ul>
+                                </div>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                                <div class="wrap-btn">
+                                    <a href="{{ url_for('blog') }}" class="flat-button btn-read-more bg-read-more">READ MORE</a>
+                                </div>
+                            </div> <!-- /.post-content -->
+                        </div> <!-- /.border-post -->
+                    </div> <!-- /.post -->
+                </div> <!-- /.flat-post -->
+                <div class="wrap-buttom text-center">
+                    <a href="#" class="flat-button bg-load-more">Load more</a>
+                </div>
+            </div> <!-- /.wrap-blog-list -->
+        </div> <!-- /.container -->
+    </div> <!-- /.main-blog-list -->
+    <div class="flat-spacer clearfix" data-desktop="77" data-mobile="60" data-smobile="60"></div>
+</section> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix">
+    <div class="container">
+        <div class="wrap-text">
+            <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consulant?</a></h3>
+        </div>
+        <div class="wrap-btn text-right">
+            <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}

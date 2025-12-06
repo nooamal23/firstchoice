@@ -1,0 +1,289 @@
+{% extends 'base_shop.html' %}
+
+{% block title %}FirstChoice - Shop Grid Sidebar V2{% endblock %}
+
+{% block content %}
+<section class="page-title v2 clearfix parallax parallax6">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="page-title-heading text-center v2">
+                <h1><a href="#" class="hover-text">SHOP PAGE</a></h1>
+            </div> <!-- /.page-title-heading -->
+
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">Home</a></li>
+                    <li><a href="{{ url_for('shop') }}" class="hover-text">Shop</a></li>
+                    <li><a href="#" class="hover-text">Shopping</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<div class="wrap-content">
+    <div class="main-shop-grid-sidebar">
+        <div class="flat-spacer clearfix" data-desktop="130" data-mobile="90" data-smobile="90"></div>
+        <div class="container clearfix">
+            <div class="sidebar-left shop-grid-v2">
+                <div class="widget widget-search">
+                    <form action="#" class="search-form" method="get">
+                        <input type="search" name="search" class="search-text" title="Search ..." placeholder="Search">
+                        <button class="search-submit" type="submit" title="Search">Search</button>
+                    </form>
+                </div> <!-- /.widget-search -->
+                <div class="flat-spacer clearfix" data-desktop="52" data-mobile="52" data-smobile="52"></div>
+                <div class="widget widget-categories widget-links v3">
+                    <h5 class="widget-title">CATEGORIES</h5>
+                    <ul>
+                        <li><a href="#" class="hover-text">Fluids</a></li>
+                        <li><a href="#" class="hover-text">Diagnostic</a></li>
+                        <li><a href="#" class="hover-text">Filters</a></li>
+                        <li><a href="#" class="hover-text">Electrical</a></li>
+                        <li><a href="#" class="hover-text">Certified</a></li>
+                    </ul>
+                </div> <!-- /.widget-categories -->
+                <div class="flat-spacer clearfix" data-desktop="51" data-mobile="50" data-smobile="50"></div>
+
+                <div class="widget widget-filter">
+                    <h5 class="widget-title">PRICE FILTER</h5>
+                    <div class="flat-price-filter">
+                        <div id="slider-range"></div>
+                        <p class="clearfix">
+                            <span class="title-amount">Price:</span>
+                            <span id="amount"></span>
+                        </p>
+                        <button type="submit" class="btn-effect bg-filter">Filter</button>
+                    </div> <!-- /.price-filter -->
+                </div> <!-- /.widget-filter -->
+
+                <div class="widget widget-top-products">
+                    <h5 class="widget-title">TOP PRODUCTS</h5>
+                    <ul class="list-products-top">
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-1.png') }}" alt="FirstChoice"></a>
+                                <div class="overlay">
+                                    <a href="#"><span class="arrow_right hover-text"></span></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#">Advance blue oil cans</a></h6>
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <p class="price">$ 235</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-2.png') }}" alt="FirstChoice"></a>
+                                <div class="overlay">
+                                    <a href="#"><span class="arrow_right hover-text"></span></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#">Advance blue oil cans</a></h6>
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <p class="price">$ 235</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-3.png') }}" alt="FirstChoice"></a>
+                                <div class="overlay">
+                                    <a href="#"><span class="arrow_right hover-text"></span></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#">Advance blue oil cans</a></h6>
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <p class="price">$ 235</p>
+                            </div>
+                        </li>
+                    </ul> <!-- /.list-products-top -->
+                </div> <!-- /.widget-top-products -->
+
+                <div class="widget widget-tags v2">
+                    <h5 class="widget-title">TAG CLOUDS</h5>
+                    <ul>
+                        <li><a href="#" class="flat-button bg-action v2">Warranties</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Diagnostic</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Filters</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Certified</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Electrical</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Brakes</a></li>
+                    </ul>
+                </div> <!-- /.widget-tags -->
+            </div> <!-- /.sidebar-left -->
+
+            <div class="wrap-shop shop-grid-v2 content-page-wrap pd-left-60">
+                <div class="flat-spacer clearfix" data-desktop="0" data-mobile="60" data-smobile="60"></div>
+                <div class="shop-content">
+                    <ul class="products clearfix shop-grid-v2">
+                        <li class="product-item clearfix">
+                            <div class="product-img one-of-two">
+                                <img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v2/product-1.png') }}" alt="FirstChoice">
+                                <span class="discount font-Rajdhani">- 15%</span>
+                                <ul class="list-icon">
+                                    <li><a href="#"><span class="icon_search"></span></a></li>
+                                    <li><a href="#"><span class="icon_cart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content one-of-two">
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h2 class="product-title"><a href="#" class="hover-text">Akom - Automotive Battery</a></h2>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 115</span>
+                                    <span class="price">$ 205</span>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                                <ul class="list-icon">
+                                    <li class="cart"><a href="#" class="flat-button bg-cart"><span class="icon_cart_alt"></span> Add to cart</a></li>
+                                    <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                        </li> <!-- /.product-item -->
+
+                        <li class="product-item clearfix">
+                            <div class="product-img one-of-two">
+                                <img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v2/product-2.png') }}" alt="FirstChoice">
+                                <span class="discount font-Rajdhani">- 15%</span>
+                                <ul class="list-icon">
+                                    <li><a href="#"><span class="icon_search"></span></a></li>
+                                    <li><a href="#"><span class="icon_cart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content one-of-two">
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h2 class="product-title"><a href="#" class="hover-text">Akom - Automotive Battery</a></h2>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 115</span>
+                                    <span class="price">$ 205</span>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                                <ul class="list-icon">
+                                    <li class="cart"><a href="#" class="flat-button bg-cart"><span class="icon_cart_alt"></span> Add to cart</a></li>
+                                    <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                        </li> <!-- /.product-item -->
+
+                        <li class="product-item clearfix">
+                            <div class="product-img one-of-two">
+                                <img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v2/product-3.png') }}" alt="FirstChoice">
+                                <span class="discount font-Rajdhani">- 15%</span>
+                                <ul class="list-icon">
+                                    <li><a href="#"><span class="icon_search"></span></a></li>
+                                    <li><a href="#"><span class="icon_cart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content one-of-two">
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h2 class="product-title"><a href="#" class="hover-text">Akom - Automotive Battery</a></h2>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 115</span>
+                                    <span class="price">$ 205</span>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                                <ul class="list-icon">
+                                    <li class="cart"><a href="#" class="flat-button bg-cart"><span class="icon_cart_alt"></span> Add to cart</a></li>
+                                    <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                        </li> <!-- /.product-item -->
+
+                        <li class="product-item clearfix">
+                            <div class="product-img one-of-two">
+                                <img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v2/product-4.png') }}" alt="FirstChoice">
+                                <span class="discount font-Rajdhani">- 15%</span>
+                                <ul class="list-icon">
+                                    <li><a href="#"><span class="icon_search"></span></a></li>
+                                    <li><a href="#"><span class="icon_cart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content one-of-two">
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h2 class="product-title"><a href="#" class="hover-text">Akom - Automotive Battery</a></h2>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 115</span>
+                                    <span class="price">$ 205</span>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                </div>
+                                <ul class="list-icon">
+                                    <li class="cart"><a href="#" class="flat-button bg-cart"><span class="icon_cart_alt"></span> Add to cart</a></li>
+                                    <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                    <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                                </ul>
+                            </div>
+                        </li> <!-- /.product-item -->
+                    </ul> <!-- /.shop-content -->
+
+                    <div class="flat-paginations v2">
+                        <ul class="paginations">
+                            <li><a href="#"><span class="arrow_carrot-left"></span></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><span class="arrow_carrot-right"></span></a></li>
+                        </ul>
+                    </div>
+                </div> <!-- /.shop-content -->
+            </div> <!-- /.wrap-shop -->
+        </div>
+        <div class="flat-spacer clearfix" data-desktop="98" data-mobile="60" data-smobile="60"></div>
+    </div> <!-- /.main-shop-grid-sidebar -->
+</div> <!-- /.wrap-content -->
+{% endblock %}

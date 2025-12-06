@@ -1,0 +1,63 @@
+.nav-signin a {
+    display: inline-block;   /* Ensures padding and background apply properly */
+    padding: 6px 12px;
+    margin-top: 8px;
+    background-color: #e8b006;
+    color: white;            /* Or any color that contrasts well with the background */
+    text-decoration: none;   /* Optional: removes underline */
+    border-radius: 4px;      /* Optional: for rounded corners */
+}
+
+
+nav.mainnav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Items align left by default */
+    flex-wrap: wrap;
+    gap: 15px; /* optional spacing */
+}
+
+/* Push the last item (Sign In) to the right */
+.nav-signin {
+    margin-left: auto;
+	float: right;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.welcome-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.signup-button {
+  margin-left: 20px;
+}
+
+.nav-signup {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: #137bc0;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  float: right;
+}
+
+.nav-signup:hover {
+  background-color: #0e5d91; /* Darker blue for hover */
+  color: white;              /* Keep text white on hover */
+}

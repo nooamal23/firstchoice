@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+
+{% block title %}Blog Details - FirstChoice{% endblock %}
+
+{% block content %}
+<section class="page-title v1 clearfix parallax parallax7">
+    <div class="flat-spacer clearfix" data-desktop="70" data-mobile="60" data-smobile="60"></div>
+    <div class="overlay"></div>
+    <div class="container clearfix">
+        <div class="wrap-page-title">
+            <div class="page-title-heading v1">
+                <h1><a href="{{ url_for('blog_single') }}" class="hover-text">BLOG DETAILS</a></h1>
+            </div> <!-- /.page-title-heading -->
+
+            <div class="breakcrums text-right v1">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="{{ url_for('blog_single') }}" class="hover-text">BLOG</a></li>
+                    <li><a href="{{ url_for('blog_single') }}" class="hover-text">BLOG DETAILS</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+    <div class="flat-spacer clearfix" data-desktop="70" data-mobile="60" data-smobile="60"></div>
+</section> <!-- /.page-title -->
+
+<section class="content-wrap">
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+    <div class="main-blog-single">
+        <div class="container clearfix">
+            <div class="sidebar-right blog-single">
+                <div class="widget widget-search">
+                    <form action="#" class="search-form" method="get">
+                        <input type="search" name="search" class="search-text" title="Search ..." placeholder="Search">
+                        <button class="search-submit" type="submit" title="Search">Search</button>
+                    </form>
+                </div> <!-- /.widget-search -->
+                <div class="flat-spacer clearfix" data-desktop="54" data-mobile="54" data-smobile="54"></div>
+                <div class="widget widget-categories widget-links v3">
+                    <h5 class="widget-title">CATEGORIES</h5>
+                    <ul>
+                        <li><a href="#" class="hover-text">Fluids</a></li>
+                        <li><a href="#" class="hover-text">Diagnostic</a></li>
+                        <li><a href="#" class="hover-text">Filters</a></li>
+                        <li><a href="#" class="hover-text">Electrical</a></li>
+                        <li><a href="#" class="hover-text">Certified</a></li>
+                    </ul>
+                </div> <!-- /.widget-categories -->
+                <div class="flat-spacer clearfix" data-desktop="50" data-mobile="50" data-smobile="50"></div>
+
+                <div class="widget widget-recent-news">
+                    <h5 class="widget-title">RECENT NEWS</h5>
+                    <ul class="list-recent-news">
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/blog/blog-grid-with-sidebar/recent-new-1.png') }}" alt="recent-news"></a>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#" class="hover-text">Your car’s fluids should be checked</a></h6>
+                                <p><a href="#" class="hover-text">Jun 24, 2018</a></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/blog/blog-grid-with-sidebar/recent-new-1.png') }}" alt="recent-news"></a>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#" class="hover-text">Your car’s fluids should be checked</a></h6>
+                                <p><a href="#" class="hover-text">Jun 24, 2018</a></p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/blog/blog-grid-with-sidebar/recent-new-1.png') }}" alt="recent-news"></a>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#" class="hover-text">Your car’s fluids should be checked</a></h6>
+                                <p><a href="#" class="hover-text">Jun 24, 2018</a></p>
+                            </div>
+                        </li>
+                    </ul> <!-- /.list-recent-news -->
+                </div> <!-- /.widget-recent-news -->
+                <div class="widget widget-tags">
+                    <h5 class="widget-title">TAG CLOUDS</h5>
+                    <ul>
+                        <li><a href="#" class="btn-defect flat-button bg-action">Warranties</a></li>
+                        <li><a href="#" class="btn-defect flat-button bg-action">Diagnostic</a></li>
+                        <li><a href="#" class="btn-defect flat-button bg-action">Filters</a></li>
+                        <li><a href="#" class="btn-defect flat-button bg-action">Certified</a></li>
+                        <li><a href="#" class="btn-defect flat-button bg-action">Electrical</a></li>
+                        <li><a href="#" class="btn-defect flat-button bg-action">Brakes</a></li>
+                    </ul>
+                </div> <!-- /.widget-tags -->
+            </div>
+
+            <div class="content-page-wrap pd-right-60">
+                <div class="flat-spacer clearfix" data-desktop="0" data-mobile="60" data-smobile="60"></div>
+                <div class="post blog-single">
+                    <div class="post-img">
+                        <div class="overlay"></div>
+                        <img src="{{ url_for('static', filename='images/blog/blog-single/post.png') }}" alt="FirstChoice">
+                    </div> <!-- /.post-img -->
+
+                    <div class="post-content">
+                        <h2><a href="#">Your car’s fluids should be checked</a></h2>
+                        <div class="meta">
+                            <ul>
+                                <li class="user"><a href="#" class="hover-text">admin</a></li>
+                                <li class="date"><a href="#" class="hover-text">Jun 24, 2018</a></li>
+                                <li class="comment"><a href="#" class="hover-text">comment</a></li>
+                            </ul>
+                        </div>
+                        <p>Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim. Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Aliquam vestibulum, eros vel venenatis vulputate, erat augue suscipit mi, nec rhoncus velit ipsum sed lorem. Nulla commodo leo eget justo blandit, non sagittis lectus dignissim.</p>
+                        <p>Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna. Nam sit amet arcu feugiat, consequat orci at, ultrices magna.</p>
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</blockquote>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur</p>
+                    </div> <!-- /.post-content -->
+
+                    <div class="post-tag">
+                        <ul>
+                            <li>Tag clouds:</li>
+                            <li><a href="#">Warranties</a></li>
+                            <li><a href="#">Diagnostic</a></li>
+                            <li><a href="#">Certified</a></li>
+                        </ul>
+                    </div> <!-- /.post-tag -->
+
+                    <div class="post-author clearfix">
+                        <div class="author-img">
+                            <img src="{{ url_for('static', filename='images/blog/blog-single/author.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="author-info">
+                            <h3 class="name"><a href="#">Martin John</a></h3>
+                            <p class="position">Sr. manager</p>
+                        </div>
+                        <blockquote>
+                            Integer rhoncus hendrerit sem egestas porttitor. Integer et mi sed dolor eleifend pretium quis ut velit. Nam sit amet arcu feugiat, consequat orci at, ultrices magna
+                        </blockquote>
+                    </div> <!-- /.post-author -->
+                </div> <!-- /.post -->
+
+                <div class="flat-comments">
+                    <h5 class="flat-heading">3 COMMENTS</h5>
+                    <ul>
+                        <li>
+                            <div class="comment clearfix">
+                                <div class="comment-img">
+                                    <img src="{{ url_for('static', filename='images/blog/blog-single/author-comment-1.png') }}" alt="author-comment">
+                                </div>
+                                <div class="comment-content">
+                                    <h3 class="name">Martin John</h3>
+                                    <span class="position">Sr. manager</span>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <div class="wrap-btn">
+                                        <a href="#" class="flat-button btn-reply bg-reply">REPLY</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="sub-comment">
+                                <li>
+                                    <div class="comment clearfix">
+                                        <div class="comment-img">
+                                            <img src="{{ url_for('static', filename='images/blog/blog-single/author-comment-2.png') }}" alt="author-comment">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h3 class="name">Martin John</h3>
+                                            <span class="position">Sr. manager</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                                            <div class="wrap-btn">
+                                                <a href="#" class="flat-button bg-reply">REPLY</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="comment clearfix">
+                                <div class="comment-img">
+                                    <img src="{{ url_for('static', filename='images/blog/blog-single/author-comment-3.png') }}" alt="author-comment">
+                                </div>
+                                <div class="comment-content">
+                                    <h3 class="name">Martin John</h3>
+                                    <span class="position">Sr. manager</span>
+                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <div class="wrap-btn">
+                                        <a href="#" class="flat-button btn-reply bg-reply">REPLY</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- /.flat-comments -->
+
+                <div class="flat-form-comment">
+                    <h5 class="flat-heading">DROP US A LINE</h5>
+                    <form action="#" class="form-comment" method="post">
+                        <div class="wrap-input one-of-two pd-right-10">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="wrap-input one-of-two pd-left-10">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="wrap-input one-of-two pd-right-10">
+                            <input type="email" name="mail" placeholder="Email" required>
+                        </div>
+                        <div class="wrap-input one-of-two pd-left-10">
+                            <input type="text" name="mobile" placeholder="Mobile">
+                        </div>
+                        <div class="wrap-input">
+                            <textarea placeholder="Messages" name="message"></textarea>
+                        </div>
+                        <div class="wrap-btn">
+                            <button type="submit" class="btn-effect btn-send-msg">Send messages</button>
+                        </div>
+                    </form>
+                </div> <!-- /.flat-form-comment -->
+            </div> <!-- /.content-page-wrap -->
+        </div> <!-- /.main-blog-single -->
+        <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+    </section> <!-- /.content-wrap -->
+
+    <section class="flat-contact v1 clearfix">
+        <div class="container">
+            <div class="wrap-text">
+                <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consultant?</a></h3>
+            </div>
+            <div class="wrap-btn text-right">
+                <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+            </div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-contact -->
+
+    <span class="gotop">
+        <img src="{{ url_for('static', filename='images/goto-automov.png') }}" alt="FirstChoice">
+    </span> <!-- /.gotop -->
+{% endblock %}

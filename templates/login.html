@@ -1,0 +1,44 @@
+{% extends "base_loging.html" %}
+
+{% block title %}Login - FirstChoice{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<br></br>
+
+<div class="content-wrap login-page" style="display: flex; justify-content: center; padding-top: 20px;">
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+    <div class="container clearfix" style="text-align: center; max-width: 600px;">
+        <div class="flat-login login-page">
+            <div class="flat-title">
+                <h2>LOGIN</h2>
+                <h4>Sign in to your FirstChoice account to access our services.</h4>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="40" data-mobile="40" data-smobile="40"></div>
+            <form action="{{ url_for('login') }}" id="login-form" method="post">
+                <div class="wrap-input" style="margin-bottom: 15px;">
+                    <input type="email" name="email" placeholder="Email" required="">
+                </div>
+                <div class="wrap-input" style="margin-bottom: 15px;">
+                    <input type="password" name="password" placeholder="Password" required="">
+                </div>
+                <div class="wrap-btn" style="margin-bottom: 20px;">
+                    <button class="btn-effect btn-login" type="submit">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div> <!-- /.container -->
+    <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+</div> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix" style="background-color: #0078d4; color: white; padding: 10px 0;">
+    <div class="container">
+        <div class="wrap-text" style="text-align: center; padding-top: 20px;">
+            <h3 class="title"><a href="#" style="color: white;">Don't have an account? Register now!</a></h3>
+        </div>
+        <div class="wrap-btn" style="text-align: center; padding-top: 10px;">
+            <a href="{{ url_for('register') }}" class="flat-button btn-register" style="background-color: white; color: #0078d4; padding: 5px 15px;">Register</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}

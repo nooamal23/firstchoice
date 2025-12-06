@@ -1,0 +1,492 @@
+{% extends "base.html" %}
+
+{% block title %}FirstChoice - Company History{% endblock %}
+
+{% block content %}
+<section class="page-title v3 clearfix parallax parallax5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="#" class="hover-text">ABOUT</a></li>
+                    <li><a href="{{ url_for('company_history') }}" class="hover-text">COMPANY HISTORY</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('company_history') }}" class="hover-text">COMPANY HISTORY</a></h1>
+            </div> <!-- /.page-title-heading -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<div class="content-wrap">
+    <section class="flat-lighthight-service">
+        <div class="lighthight-service-wrap">
+            <div class="container">
+                <div class="flat-carousel" data-column="3" data-column2="2" data-column3="1" data-gap="30" data-dots="false" data-auto="true" data-loop="true">
+                    <div class="flat-imgbox clearfix owl-carousel">
+                        <div class="imgbox lighthight-service">
+                            <div class="imgbox-img">
+                                <img src="{{ url_for('static', filename='images/company/company-history/hightlight-service-1.png') }}" alt="FirstChoice">
+                            </div>
+                            <div class="imgbox-content">
+                                <h3><a href="#">Air conditioning</a></h3>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+                                <div class="wrap-btn">
+                                    <a href="#" class="flat-button bg-read-more v4">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox lighthight-service">
+                            <div class="imgbox-img">
+                                <img src="{{ url_for('static', filename='images/company/company-history/hightlight-service-2.png') }}" alt="FirstChoice">
+                            </div>
+                            <div class="imgbox-content">
+                                <h3><a href="#">Electrical system</a></h3>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+                                <div class="wrap-btn">
+                                    <a href="#" class="flat-button bg-read-more v4">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imgbox lighthight-service">
+                            <div class="imgbox-img">
+                                <img src="{{ url_for('static', filename='images/company/company-history/hightlight-service-1.png') }}" alt="FirstChoice">
+                            </div>
+                            <div class="imgbox-content">
+                                <h3><a href="#">Brake repair</a></h3>
+                                <p>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae</p>
+                                <div class="wrap-btn">
+                                    <a href="#" class="flat-button bg-read-more v4">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </div> <!-- /.lighthight-service-wrap -->
+    </section> <!-- /.flat-lighthight-service -->
+
+    <section class="flat-workshop-overview">
+        <div class="container flat-border-top">
+            <div class="flat-spacer clearfix" data-desktop="85" data-mobile="77" data-smobile="77"></div>
+            <div class="flat-title text-center v3">
+                <h2 class="heading">WORKSHOP OVERVIEW</h2>
+                <p>Company development history</p>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="68" data-mobile="68" data-smobile="68"></div>
+            <div class="flat-timeline">
+                <div class="timeline-wrap clearfix">
+                    <div class="title-wrap text-center one-of-two">
+                        <h2>GENERAL CAR</h2>
+                        <p>FACTORY</p>
+                    </div>
+                    <div class="timeline-box one-of-two">
+                        <div class="img">
+                            <img src="{{ url_for('static', filename='images/company/company-history/overview-1.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Start with small space</a></h4>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                        </div>
+                        <div class="year">1995</div>
+                    </div>
+                    <div class="timeline-box one-of-two">
+                        <div class="img">
+                            <img src="{{ url_for('static', filename='images/company/company-history/overview-2.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Increase emplies by 6 members</a></h4>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                        </div>
+                        <div class="year">2003</div>
+                    </div>
+                    <div class="timeline-box one-of-two">
+                        <div class="img">
+                            <img src="{{ url_for('static', filename='images/company/company-history/overview-3.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="content">
+                            <h4><a href="#">Branches open in International</a></h4>
+                            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum</p>
+                        </div>
+                        <div class="year">2018</div>
+                    </div>
+                </div>
+            </div> <!-- /.flat-timeline -->
+            <div class="flat-spacer clearfix" data-desktop="85" data-mobile="60" data-smobile="60"></div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-workshop-overview -->
+
+    <section class="flat-countdown style2">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="105" data-mobile="60" data-smobile="60"></div>
+            <div class="flat-counter clearfix">
+                <div class="counter one-of-four">
+                    <div class="counter-numb clearfix">
+                        <div class="icon">
+                            <img src="{{ url_for('static', filename='images/home2/icon-count-1.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="text-numb">
+                            <span class="numb" data-from="0" data-to="320" data-speed="2000" data-inviewport="yes">320</span>
+                        </div>
+                    </div>
+                    <div class="counter-text text-center">
+                        <h5>EXPERIENCED TECHNICIALS</h5>
+                    </div>
+                </div> <!-- /.counter -->
+                <div class="counter one-of-four">
+                    <div class="counter-numb clearfix">
+                        <div class="icon">
+                            <img src="{{ url_for('static', filename='images/home2/icon-count-2.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="text-numb">
+                            <span class="numb" data-from="0" data-to="9580" data-speed="2000" data-inviewport="yes">9580</span>
+                        </div>
+                    </div>
+                    <div class="counter-text text-center">
+                        <h5>TRANSPARENCY MATTERS</h5>
+                    </div>
+                </div> <!-- /.counter -->
+                <div class="counter one-of-four">
+                    <div class="counter-numb clearfix">
+                        <div class="icon">
+                            <img src="{{ url_for('static', filename='images/home2/icon-count-3.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="text-numb">
+                            <span class="numb" data-from="0" data-to="100" data-speed="2000" data-inviewport="yes">100%</span>
+                        </div>
+                    </div>
+                    <div class="counter-text text-center">
+                        <h5>COMPLETED PROJECTS</h5>
+                    </div>
+                </div> <!-- /.counter -->
+                <div class="counter one-of-four plus">
+                    <div class="counter-numb clearfix">
+                        <div class="icon">
+                            <img src="{{ url_for('static', filename='images/home2/icon-count-4.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="text-numb">
+                            <span class="numb" data-from="0" data-to="140" data-speed="2000" data-inviewport="yes">140</span>
+                        </div>
+                    </div>
+                    <div class="counter-text text-center">
+                        <h5>PROFESSIONAL AWARDS</h5>
+                    </div>
+                </div> <!-- /.counter -->
+            </div> <!-- /.flat-counter -->
+            <div class="flat-spacer clearfix" data-desktop="98" data-mobile="60" data-smobile="60"></div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-countdown -->
+
+    <section class="flat-testimonials style4 bg-f6f6f6">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="84" data-mobile="80" data-smobile="80"></div>
+            <div class="flat-title text-center v3">
+                <h2 class="heading">TESTIMONIALS</h2>
+                <p>Our professionals will perform diagnostic tests</p>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="23" data-mobile="0" data-smobile="0"></div>
+            <div class="flat-carousel-not-numb" data-column="3" data-column2="2" data-column3="1" data-gap="30" data-dots="true" data-loop="true">
+                <div class="owl-carousel clearfix">
+                    <div class="testimonial style4 v2 text-left">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </blockquote>
+                        <div class="info">
+                            <h5 class="name"><a href="#">JOHN SMITH</a></h5>
+                            <p class="position">Chief Director</p>
+                        </div>
+                    </div>
+                    <div class="testimonial style4 v2 text-left">
+                        <blockquote>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        </blockquote>
+                        <div class="info">
+                            <h5 class="name"><a href="#">JOHN SMITH</a></h5>
+                            <p class="position">Chief Director</p>
+                        </div>
+                    </div>
+                    <div class="testimonial style4 v2 text-left">
+                        <blockquote>
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                        </blockquote>
+                        <div class="info">
+                            <h5 class="name"><a href="#">JOHN SMITH</a></h5>
+                            <p class="position">Chief Director</p>
+                        </div>
+                    </div>
+                    <div class="testimonial style4 v2 text-left">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </blockquote>
+                        <div class="info">
+                            <h5 class="name"><a href="#">JOHN SMITH</a></h5>
+                            <p class="position">Chief Director</p>
+                        </div>
+                    </div>
+                    <div class="testimonial style4 v2 text-left">
+                        <blockquote>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                        </blockquote>
+                        <div class="info">
+                            <h5 class="name"><a href="#">JOHN SMITH</a></h5>
+                            <p class="position">Chief Director</p>
+                        </div>
+                    </div>
+                    <div class="testimonial style4 v2 text-left">
+                        <blockquote>
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem
+                        </blockquote>
+                        <div class="info">
+                            <h5 class="name"><a href="#">JOHN SMITH</a></h5>
+                            <p class="position">Chief Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="74" data-mobile="74" data-smobile="74"></div>
+        </div>
+    </section> <!-- /.flat-testimonials -->
+
+    <section class="flat-team style2">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="111" data-mobile="77" data-smobile="77"></div>
+            <div class="flat-title v6 text-center">
+                <h2>OUR TEAM</h2>
+                <p>Strong company team</p>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="75" data-mobile="40" data-smobile="40"></div>
+            <div class="flat-carousel" data-auto="false" data-column="4" data-column2="2" data-column3="1" data-gap="30" data-dots="true" data-nav="true" data-loop="true">
+                <div class="flat-imgbox owl-carousel style6">
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-1.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Mr. Dony</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-2.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Tony Cruise</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-3.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Martin John</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-4.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Mac William</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-1.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Mr. Dony</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-2.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Mr. Dony</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-3.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Mr. Dony</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgbox style6 text-center">
+                        <div class="imgbox-img">
+                            <img src="{{ url_for('static', filename='images/home3/member-4.png') }}" alt="FirstChoice">
+                        </div>
+                        <div class="imgbox-content">
+                            <h3><a href="#">Mr. Dony</a></h3>
+                            <p class="position">Sr. manager</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                            <div class="flat-socail">
+                                <ul>
+                                    <li><a href="#" class="hover-text"><span class="social_facebook"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_twitter"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_pinterest"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="social_googleplus"></span></a></li>
+                                    <li><a href="#" class="hover-text"><span class="fa fa-youtube"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.flat-imgbox -->
+            </div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-team -->
+
+    <section class="flat-row">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="82" data-mobile="0" data-smobile="0"></div>
+            <div class="flat-title text-center">
+                <h3>ACHIEVEMENT</h3>
+            </div>
+            <div class="flat-spacer clearfix" data-desktop="66" data-mobile="30" data-smobile="30"></div>
+            <div class="sub-col clearfix">
+                <div class="one-of-two">
+                    <div class="flat-img-single pd-right-15">
+                        <div class="img-single style2">
+                            <img src="{{ url_for('static', filename='images/company/company-history/Achivement.png') }}" alt="FirstChoice">
+                        </div>
+                    </div>
+                </div>
+                <div class="one-of-two">
+                    <div class="flat-achevement pd-left-15">
+                        <div class="accordion">
+                            <div class="accordion-toggle">
+                                <div class="toggle-title active">
+                                    Over 25 Years Experience
+                                </div>
+                                <div class="toggle-content">
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    </p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div> <!-- /.accordion-toggle -->
+                            <div class="accordion-toggle">
+                                <div class="toggle-title">
+                                    Collision Repair Excellence
+                                </div>
+                                <div class="toggle-content">
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    </p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div> <!-- /.accordion-toggle -->
+                            <div class="accordion-toggle">
+                                <div class="toggle-title">
+                                    Accreditation & Certifications
+                                </div>
+                                <div class="toggle-content">
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    </p>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div> <!-- /.accordion-toggle -->
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.sub-col -->
+            <div class="flat-spacer clearfix" data-desktop="80" data-mobile="80" data-smobile="80"></div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-row -->
+
+    <section class="flat-contact v1 clearfix">
+        <div class="container">
+            <div class="wrap-text">
+                <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consulant?</a></h3>
+            </div>
+            <div class="wrap-btn text-right">
+                <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+            </div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-contact -->
+</div> <!-- /.content-wrap -->
+{% endblock %}

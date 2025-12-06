@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Our Projects - FirstChoice{% endblock %}
+
+{% block content %}
+<section class="page-title v3 clearfix parallax parallax5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="#" class="hover-text">PAGES</a></li>
+                    <li><a href="{{ url_for('project') }}" class="hover-text">OUR PROJECTS</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('project') }}" class="hover-text">OUR PROJECTS</a></h1>
+            </div> <!-- /.page-title-heading -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<div class="content-wrap">
+    <section class="flat-project">
+        <div class="container">
+            <div class="flat-spacer clearfix" data-desktop="80" data-mobile="80" data-smobile="80"></div>
+            <ul class="flat-filter style1 text-center clearfix">
+                <li class="active"><a href="#" data-filter="*">Show All</a></li>
+                <li><a href="#" data-filter=".Mechanic">Mechanic</a></li>
+                <li><a href="#" data-filter=".Engine">Engine Repair</a></li>
+                <li><a href="#" data-filter=".Mufflers">Mufflers</a></li>
+                <li><a href="#" data-filter=".Oil">Oil Changes</a></li>
+            </ul>
+            <div class="flat-spacer clearfix" data-desktop="60" data-mobile="60" data-smobile="60"></div>
+            <div class="flat-imgbox isotope-project clearfix style5">
+                <div class="imgbox style5 Mechanic Engine one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-1.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Oil one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-2.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Mufflers one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-3.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Mufflers one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-4.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Mufflers one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-5.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Mufflers one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-6.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Mufflers one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-7.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+
+                <div class="imgbox style5 Mechanic Mufflers one-of-two">  
+                    <div class="imgbox-img">
+                        <img src="{{ url_for('static', filename='images/our-project/project-v2/project-8.png') }}" alt="FirstChoice"> 
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="imgbox-content one-of-two">
+                        <h4 class="heading"><a href="#" class="hover-text">Mechanic works</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                </div> <!-- /.imgbox -->
+            </div><!-- /.flat-project -->
+            <div class="flat-paginations v6">
+                <ul class="paginations clearfix">
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                </ul> <!-- /.paginations -->
+            </div> <!-- /.flat-paginations -->
+            <div class="flat-spacer clearfix" data-desktop="100" data-mobile="60" data-smobile="60"></div>
+        </div> <!-- /.container -->
+    </section> <!-- /.flat-projects -->
+</div> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix">
+    <div class="container">
+        <div class="wrap-text">
+            <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consultant?</a></h3>
+        </div>
+        <div class="wrap-btn text-right">
+            <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}

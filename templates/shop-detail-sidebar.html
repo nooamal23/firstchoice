@@ -1,0 +1,309 @@
+{% extends "base_shop.html" %}
+
+{% block title %}Shop Detail - FirstChoice{% endblock %}
+
+{% block content %}
+<section class="page-title v2 clearfix parallax parallax6">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('shop_detail_sidebar') }}" class="hover-text">SHOP PAGE</a></h1>
+            </div> <!-- /.page-title-heading -->
+
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">Home</a></li>
+                    <li><a href="{{ url_for('shop') }}" class="hover-text">Shop</a></li>
+                    <li><a href="{{ url_for('shop_detail_sidebar') }}" class="hover-text">Shopping</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<div class="wrap-content">
+    <div class="main-shop-detail-sidebar">
+        <div class="container clearfix">
+            <div class="sidebar-left shop-detail-sidebar">
+                <div class="widget widget-search">
+                    <form action="#" class="search-form" method="get">
+                        <input type="search" name="search" class="search-text" title="Search ..." placeholder="Search">
+                        <button class="search-submit" type="submit" title="Search">Search</button>
+                    </form>
+                </div> <!-- /.widget-search -->
+                <div class="flat-spacer clearfix" data-desktop="52" data-mobile="52" data-smobile="52"></div>
+                <div class="widget widget-categories widget-links v3">
+                    <h5 class="widget-title">CATEGORIES</h5>
+                    <ul>
+                        <li><a href="#" class="hover-text">Fluids</a></li>
+                        <li><a href="#" class="hover-text">Diagnostic</a></li>
+                        <li><a href="#" class="hover-text">Filters</a></li>
+                        <li><a href="#" class="hover-text">Electrical</a></li>
+                        <li><a href="#" class="hover-text">Certified</a></li>
+                    </ul>
+                </div> <!-- /.widget-categories -->
+                <div class="flat-spacer clearfix" data-desktop="51" data-mobile="50" data-smobile="50"></div>
+
+                <div class="widget widget-filter">
+                    <h5 class="widget-title">PRICE FILTER</h5>
+                    <div class="flat-price-filter">
+                        <div id="slider-range"></div>
+                        <p class="clearfix">
+                            <span class="title-amount">Price:</span>
+                            <span id="amount"></span> 
+                        </p>
+                        <button type="submit" class="btn-effect bg-filter">Filter</button>
+                    </div> <!-- /.price-filter -->
+                </div> <!-- /.widget-filter -->
+
+                <div class="widget widget-top-products">
+                    <h5 class="widget-title">TOP PRODUCTS</h5>
+                    <ul class="list-products-top">
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-1.png') }}" alt="FirstChoice"></a>
+                                <div class="overlay">
+                                    <a href="#"><span class="arrow_right hover-text"></span></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#">Advance blue oil cans</a></h6>
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <p class="price">$ 235</p>
+                            </div>  
+                        </li>  
+
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-2.png') }}" alt="FirstChoice"></a>
+                                <div class="overlay">
+                                    <a href="#"><span class="arrow_right hover-text"></span></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#">Advance blue oil cans</a></h6>
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <p class="price">$ 235</p>
+                            </div>  
+                        </li>  
+
+                        <li class="clearfix">
+                            <div class="img">
+                                <a href="#"><img src="{{ url_for('static', filename='images/shop/shop-grid-sidebar-v1/product-top-3.png') }}" alt="FirstChoice"></a>
+                                <div class="overlay">
+                                    <a href="#"><span class="arrow_right hover-text"></span></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h6 class="heading"><a href="#">Advance blue oil cans</a></h6>
+                                <div class="list-star">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <p class="price">$ 235</p>
+                            </div>  
+                        </li> 
+                    </ul> <!-- /.list-products-top -->
+                </div> <!-- /.widget-top-products -->
+
+                <div class="widget widget-tags v2">
+                    <h5 class="widget-title">TAG CLOUDS</h5>
+                    <ul>
+                        <li><a href="#" class="flat-button bg-action v2">Warranties</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Diagnostic</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Filters</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Certified</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Electrical</a></li>
+                        <li><a href="#" class="flat-button bg-action v2">Brakes</a></li>
+                    </ul>
+                </div> <!-- /.widget-tags -->
+            </div> <!-- /.sidebar-left -->
+
+            <div class="content-page-wrap wrap-shop-detail-sidebar shop-detail-sidebar woocommerce pd-left-60">
+                <div class="flat-spacer clearfix" data-desktop="0" data-mobile="60" data-smobile="60"></div>
+                <div class="product-detail clearfix pd-bottom-40">
+                    <div class="product-img one-of-two">
+                        <img src="{{ url_for('static', filename='images/shop/shop-detail/product-detail.png') }}" alt="FirstChoice">
+                        <a href="{{ url_for('static', filename='images/shop/shop-detail-sidebar/product-detail.png') }}" class="zoom-pic"><span class="icon_zoom-in_alt"></span></a>
+                    </div>
+                    <div class="product-content one-of-two">
+                        <h2 class="product-title"><a href="#" class="hover-text">Akom - Automotive Battery</a></h2>
+                        <div class="list-star text-right">
+                            <i class="icon_star"></i>
+                            <i class="icon_star"></i>
+                            <i class="icon_star"></i>
+                            <i class="icon_star"></i>
+                            <i class="icon_star"></i>
+                        </div>
+                        <div class="product-info clearfix">
+                            <span class="price-sale font-Rajdhani">$ 115</span>
+                            <span class="price">$ 205</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div> <!-- /.product-info -->
+
+                        <div class="wrap-qty">
+                            <span>Qty:</span>
+                            <input type="number" class="qty" name="qty" value="1" step="1">
+                        </div> <!-- /.wrap-qty -->
+                        <hr>
+                        <ul class="list-icon">
+                            <li class="cart"><a href="#" class="flat-button bg-cart"><span class="icon_cart_alt"></span> Add to cart</a></li>
+                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                            <li><a href="#"><span class="icon_tags_alt"></span></a></li>
+                        </ul>
+                    </div>
+                </div> <!-- /.product-detail -->
+
+                <div class="flat-tabs style1">
+                    <ul class="tab-title clearfix"> 
+                        <li class="item-title active">
+                            <span class="inner">Description</span>
+                        </li>
+                        <li class="item-title">
+                            <span class="inner">Addition Info</span>
+                        </li>
+                        <li class="item-title">
+                            <span class="inner">Reviews (0)</span>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content-wrap">
+                        <div class="tab-content">
+                            <div class="item-content">
+                                <h3>Product Description</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed.</p>              
+                            </div>
+                        </div><!-- /.tab-content -->
+
+                        <div class="tab-content">
+                            <div class="item-content">
+                                <h3>Addition Information</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a metus pellentesque, scelerisque ex sed, volutpat nisi. Cras sit amet felis nulla. Cras mi ex, mattis vel molestie sed.</p>              
+                            </div>
+                        </div><!-- /.tab-content -->
+
+                        <div class="tab-content">
+                            <div class="item-content">
+                                <h3>Reviews</h3>
+                                <p>There are no reviews yet.</p>              
+                            </div>
+                        </div><!-- /.tab-content -->
+                    </div><!-- /.tab-content-wrap -->
+                </div> <!-- /.flat-tabs -->
+
+                <div class="flat-related-product clearfix pd-top-80">
+                    <div class="flat-title text-left pd-bottom-80">
+                        <h3>RELATED PRODUCT</h3>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div>
+                    <ul class="products clearfix">
+                        <li class="product-item one-of-four clearfix">
+                            <div class="product-img">
+                                <img src="{{ url_for('static', filename='images/shop/shop-detail-sidebar/related-product-1.png') }}" alt="FirstChoice">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="product-content">
+                                <h5 class="product-title"><a href="#" class="hover-text">Akom Battery</a></h5>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 115</span>
+                                    <span class="price">$ 205</span>
+                                    <div class="list-star">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> <!-- /.product-item -->
+
+                        <li class="product-item one-of-four clearfix">
+                            <div class="product-img">
+                                <img src="{{ url_for('static', filename='images/shop/shop-detail-sidebar/related-product-2.png') }}" alt="FirstChoice">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="product-content">
+                                <h5 class="product-title"><a href="#" class="hover-text">Engine 8 - Covette</a></h5>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 3250</span>
+                                    <span class="price">$ 4235</span>
+                                    <div class="list-star">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> <!-- /.product-item -->
+
+                        <li class="product-item one-of-four clearfix">
+                            <div class="product-img">
+                                <img src="{{ url_for('static', filename='images/shop/shop-detail-sidebar/related-product-3.png') }}" alt="FirstChoice">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="product-content">
+                                <h5 class="product-title"><a href="#" class="hover-text">Ferrari steer</a></h5>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 715</span>
+                                    <span class="price">$ 835</span>
+                                    <div class="list-star">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> <!-- /.product-item -->
+
+                        <li class="product-item one-of-four clearfix">
+                            <div class="product-img">
+                                <img src="{{ url_for('static', filename='images/shop/shop-detail-sidebar/related-product-4.png') }}" alt="FirstChoice">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="product-content">
+                                <h5 class="product-title"><a href="#" class="hover-text">Extinguisher</a></h5>
+                                <div class="product-info clearfix">
+                                    <span class="price-sale font-Rajdhani">$ 85</span>
+                                    <span class="price">$ 135</span>
+                                    <div class="list-star">
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                        <i class="icon_star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> <!-- /.product-item -->
+                    </ul> <!-- /.products -->
+                </div> <!-- /.flat-related-product -->   
+            </div> <!-- /.wrap-shop-detail -->
+        </div>  <!-- /.container -->
+    </div>  <!-- /.main-shop-detail -->
+</div> <!-- /.wrap-content -->
+
+<span class="gotop">
+    <img src="{{ url_for('static', filename='images/goto-automov.png') }}" alt="FirstChoice">
+</span> <!-- /.gotop -->
+{% endblock %}

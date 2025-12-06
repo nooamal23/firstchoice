@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}FirstChoice - 404 Error{% endblock %}
+
+{% block content %}
+<section class="page-title v3 clearfix parallax parallax4">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="wrap-page-title">
+            <div class="breakcrums text-center v2">
+                <ul>
+                    <li><a href="{{ url_for('index') }}" class="hover-text">HOME</a></li>
+                    <li><a href="#" class="hover-text">PAGES</a></li>
+                    <li><a href="{{ url_for('error') }}" class="hover-text">404 ERROR</a></li>
+                </ul>
+            </div> <!-- /.breakcrums -->
+
+            <div class="page-title-heading text-center v2">
+                <h1><a href="{{ url_for('error') }}" class="hover-text">404 ERROR</a></h1>
+            </div> <!-- /.page-title-heading -->
+        </div> <!-- /.wrap-page-title -->
+    </div> <!-- /.container -->
+</section> <!-- /.page-title -->
+
+<div class="content-wrap error-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="main-error-page text-center">
+                    <img src="{{ url_for('static', filename='images/error/error.png') }}" alt="FirstChoice">
+                    <h2>Error 404 - Page not found</h2>
+                    <p>The page you request could not be found</p>
+                    <div class="wrap-btn">
+                        <a href="{{ url_for('index') }}" class="flat-button bg-back-home">Back to home</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div> <!-- /.container -->
+</div> <!-- /.content-wrap -->
+
+<section class="flat-contact v1 clearfix">
+    <div class="container">
+        <div class="wrap-text">
+            <h3 class="title"><a href="{{ url_for('contact') }}">Have you question or need any help for work consulant?</a></h3>
+        </div>
+        <div class="wrap-btn text-right">
+            <a href="{{ url_for('contact') }}" class="flat-button btn-contact bg-contact">Contact us</a>
+        </div>
+    </div> <!-- /.container -->
+</section> <!-- /.flat-contact -->
+{% endblock %}
